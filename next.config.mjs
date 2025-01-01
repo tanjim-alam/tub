@@ -1,5 +1,9 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
+// next.config.mjs
+
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
     async redirects() {
       return [
         {
@@ -313,4 +317,6 @@ module.exports = {
       ];
     },
   };
+  
+  export default nextConfig;
   
