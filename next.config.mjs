@@ -1,245 +1,316 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
     async redirects() {
       return [
         {
-          source: '/', // The old home page path
-          destination: 'https://www.gofamy.com', // The new home page URL
-          permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-youtube-views',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-youtube-views',
+          permanent: true, // 301 Redirect
         },
         {
-          source: '/buy-youtube-views', // The old URL path
-          destination: 'https://www.gofamy.com/buy-youtube-views', // The new URL path
-          permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-youtube-subscribers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-youtube-subscribers',
+          permanent: true, // 301 Redirect
         },
         {
-          source: '/buy-youtube-subscribers', // The old URL path
-          destination: 'https://www.gofamy.com/buy-youtube-subscribers', // The new URL path
-          permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-youtube-likes',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-youtube-likes',
+          permanent: true, // 301 Redirect
         },
         {
-          source: '/buy-youtube-likes', // The old URL path
-          destination: 'https://www.gofamy.com/buy-youtube-likes', // The new URL path
-          permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-youtube-comments',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-youtube-comments',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-youtube-comments', // The old URL path
-            destination: 'https://www.gofamy.com/buy-youtube-comments', // The new URL path
-            permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-instagram-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-instagram-followers',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-youtube-short-views', // The old URL path
-            destination: 'https://www.gofamy.com/buy-youtube-short-views', // The new URL path
-            permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-instagram-likes',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-instagram-likes',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-youtube-live-stream-views-viewers', // The old URL path
-            destination: 'https://www.gofamy.com/buy-youtube-live-stream-views-viewers', // The new URL path
-            permanent: true, // Indicates a 301 permanent redirect
+          source: '/buy-instagram-comments',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-instagram-comments',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-facebook-followers',
-            destination: 'https://www.gofamy.com/buy-facebook-followers',
-            permanent: true,
+          source: '/buy-twitter-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-twitter-followers',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-facebook-likes',
-            destination: 'https://www.gofamy.com/buy-facebook-likes',
-            permanent: true,
+          source: '/buy-twitter-likes',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-twitter-likes',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-facebook-video-views',
-            destination: 'https://www.gofamy.com/buy-facebook-video-views',
-            permanent: true,
+          source: '/buy-twitter-retweets',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-twitter-retweets',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-facebook-comments',
-            destination: 'https://www.gofamy.com/buy-facebook-comments',
-            permanent: true,
+          source: '/buy-tiktok-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-tiktok-followers',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-facebook-page-likes',
-            destination: 'https://www.gofamy.com/buy-facebook-page-likes',
-            permanent: true,
+          source: '/buy-tiktok-likes',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-tiktok-likes',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-facebook-live-stream-views-viewers',
-            destination: 'https://www.gofamy.com/buy-facebook-live-stream-views-viewers',
-            permanent: true,
+          source: '/buy-tiktok-views',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-tiktok-views',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-followers',
-            destination: 'https://www.gofamy.com/buy-instagram-followers',
-            permanent: true,
+          source: '/buy-tiktok-comments',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-tiktok-comments',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-likes',
-            destination: 'https://www.gofamy.com/buy-instagram-likes',
-            permanent: true,
+          source: '/buy-twitch-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-twitch-followers',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-reels-likes',
-            destination: 'https://www.gofamy.com/buy-instagram-reels-likes',
-            permanent: true,
+          source: '/buy-twitch-views',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-twitch-views',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-reels-views',
-            destination: 'https://www.gofamy.com/buy-instagram-reels-views',
-            permanent: true,
+          source: '/buy-twitch-live-stream-views',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-twitch-live-stream-views',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-reels-comments',
-            destination: 'https://www.gofamy.com/buy-instagram-reels-comments',
-            permanent: true,
+          source: '/buy-spotify-plays',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-spotify-plays',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-reels-story-views',
-            destination: 'https://www.gofamy.com/buy-instagram-story-views',
-            permanent: true,
+          source: '/buy-spotify-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-spotify-followers',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-target-likes',
-            destination: 'https://www.gofamy.com/buy-instagram-target-likes',
-            permanent: true,
+          source: '/buy-spotify-monthly-listeners',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-spotify-monthly-listeners',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-target-followers',
-            destination: 'https://www.gofamy.com/buy-instagram-target-followers',
-            permanent: true,
+          source: '/buy-spotify-pre-saves',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-spotify-pre-saves',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-instagram-live-stream-views',
-            destination: 'https://www.gofamy.com/buy-instagram-live-stream-views',
-            permanent: true,
+          source: '/buy-spotify-saves',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-spotify-saves',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-twitter-followers',
-            destination: 'https://www.gofamy.com/buy-twitter-followers',
-            permanent: true,
+          source: '/buy-spotify-playlist-plays',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-spotify-playlist-plays',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-twitter-likes',
-            destination: 'https://www.gofamy.com/buy-twitter-likes',
-            permanent: true,
+          source: '/buy-linkedin-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-linkedin-followers',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-twitter-retweets',
-            destination: 'https://www.gofamy.com/buy-twitter-retweets',
-            permanent: true,
+          source: '/buy-linkedin-connections',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-linkedin-connections',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-twitter-video-views',
-            destination: 'https://www.gofamy.com/buy-twitter-video-views',
-            permanent: true,
+          source: '/buy-linkedin-recommendations',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-linkedin-recommendations',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-tiktok-followers',
-            destination: 'https://www.gofamy.com/buy-tiktok-followers',
-            permanent: true,
+          source: '/buy-linkedin-endorsements',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-linkedin-endorsements',
+          permanent: true, // 301 Redirect
         },
         {
-            source: '/buy-tiktok-likes',
-            destination: 'https://www.gofamy.com/buy-tiktok-likes',
-            permanent: true,
-        },
-        {
-            source: '/buy-tiktok-views',
-            destination: 'https://www.gofamy.com/buy-tiktok-views',
-            permanent: true,
-        },
-        {
-            source: '/buy-tiktok-comments',
-            destination: 'https://www.gofamy.com/buy-tiktok-comments',
-            permanent: true,
-        },
-        {
-            source: '/buy-spotify-followers',
-            destination: 'https://www.gofamy.com/buy-spotify-followers',
-            permanent: true,
-        },
-        {
-            source: '/buy-spotify-plays',
-            destination: 'https://www.gofamy.com/buy-spotify-plays',
-            permanent: true,
-        },
-        {
-            source: '/buy-soundcloud-followers',
-            destination: 'https://www.gofamy.com/buy-soundcloud-followers',
-            permanent: true,
-        },
-        {
-            source: '/buy-soundcloud-plays',
-            destination: 'https://www.gofamy.com/buy-soundcloud-plays',
-            permanent: true,
-        },
-        {
-            source: '/buy-linkedin-followers',
-            destination: 'https://www.gofamy.com/buy-linkedin-followers',
-            permanent: true,
-        },
-        {
-            source: '/buy-linkedin-connections',
-            destination: 'https://www.gofamy.com/buy-linkedin-connections',
-            permanent: true,
-        },
-        {
-            source: '/buy-linkedin-likes',
-            destination: 'https://www.gofamy.com/buy-linkedin-likes',
-            permanent: true,
-        },
-        {
-            source: '/buy-pinterest-followers',
-            destination: 'https://www.gofamy.com/buy-pinterest-followers',
-            permanent: true,
-        },
-        {
-            source: '/buy-pinterest-reactions',
-            destination: 'https://www.gofamy.com/buy-pinterest-reactions',
-            permanent: true,
-        },
-        {
-            source: '/buy-pinterest-likes',
-            destination: 'https://www.gofamy.com/buy-pinterest-likes',
-            permanent: true,
-        },
-        {
-            source: '/buy-snapchat-followers',
-            destination: 'https://www.gofamy.com/buy-snapchat-followers',
-            permanent: true,
-        },
-        {
-            source: '/buy-snapchat-likes',
-            destination: 'https://www.gofamy.com/buy-snapchat-likes',
-            permanent: true,
-        },
-        {
-            source: '/buy-threads-likes',
-            destination: 'https://www.gofamy.com/buy-threads-likes',
-            permanent: true,
-        },
-        {
-            source: '/buy-threads-comments',
-            destination: 'https://www.gofamy.com/buy-threads-comments',
-            permanent: true,
-        },
-        {
-            source: '/buy-twitch-followers',
-            destination: 'https://www.gofamy.com/buy-twitch-followers',
-            permanent: true,
-        },
-        {
-            source: '/buy-twitch-views',
-            destination: 'https://www.gofamy.com/buy-twitch-views',
-            permanent: true,
-        },
-        {
-            source: '/buy-twitch-live-viewers',
-            destination: 'https://www.gofamy.com/buy-twitch-live-viewers',
-            permanent: true,
+          source: '/buy-linkedin-employees',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-linkedin-employees',
+          permanent: true, // 301 Redirect
         },
       ];
     },
   };
-  
-  export default nextConfig;
   
