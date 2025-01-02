@@ -1,11 +1,20 @@
-// next.config.mjs
-
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
     async redirects() {
       return [
+        {
+          source: '/',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com',
+          permanent: true, // 301 Redirect
+        },
         {
           source: '/buy-youtube-views',
           has: [
@@ -304,14 +313,47 @@ const nextConfig = {
           permanent: true, // 301 Redirect
         },
         {
-          source: '/buy-linkedin-employees',
+          source: '/buy-google-5-star-reviews',
           has: [
             {
               type: 'host',
               value: 'www.tubeviews.co',
             },
           ],
-          destination: 'https://www.gofamy.com/buy-linkedin-employees',
+          destination: 'https://www.gofamy.com/buy-google-5-star-reviews',
+          permanent: true, // 301 Redirect
+        },
+        {
+          source: '/buy-facebook-followers',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-facebook-followers',
+          permanent: true, // 301 Redirect
+        },
+        {
+          source: '/buy-facebook-page-likes',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-facebook-page-likes',
+          permanent: true, // 301 Redirect
+        },
+        {
+          source: '/buy-facebook-5-star-reviews',
+          has: [
+            {
+              type: 'host',
+              value: 'www.tubeviews.co',
+            },
+          ],
+          destination: 'https://www.gofamy.com/buy-facebook-5-star-reviews',
           permanent: true, // 301 Redirect
         },
       ];
